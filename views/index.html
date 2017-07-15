@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script type="text/javascript" src="app.js"> </script>
+
+<body ng-app="app">
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/!">Modern Education Platform</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#!/dashboard">Dash Board</a></li>
+        <li><a href="#!examListPage">Exam list</a></li>
+        <li><a href="#!o-net">O-net</a></li>
+        <li><a href="#!post">Post</a></li>
+        <li><a href="#!O-net-M3-main">O-Net M3</a></li>
+        <li><a href="#!O-net-M3-tutorial">O-Net M3 Tutorial</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#!signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#!logIn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10" ng-view></div>
+    <div class="col-sm-1"></div>
+</div>
+
+</body>
+</html>

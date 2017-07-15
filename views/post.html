@@ -1,0 +1,23 @@
+<div ng-controller="view1Ctrl">
+
+<h1>Post</h1>
+
+<form ng-submit="submitPost()">
+      <input type="text" ng-model="formData.desc" placeholder="Enter desc" />
+      <input type="text" ng-model="formData.title" placeholder="Enter title" />
+
+      <h4>
+        <label><input type="radio" ng-model="formData.answer" value="a">  A </label>
+        <br>
+        <label><input type="radio" ng-model="formData.answer" value="b">  B </label>
+        <br>
+        <label><input type="radio" ng-model="formData.answer" value="c">  C </label>
+        <br>
+        <label><input type="radio" ng-model="formData.answer" value="d">  D </label>
+        <br>
+      </h4>
+
+      <input class="btn btn-success" type="submit" name="submit" Value="Submit"/>
+</form>
+
+</div>

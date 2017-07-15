@@ -1,0 +1,18 @@
+<h1> Test Summary</h1>
+<br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+  <th>Question number</th>
+  <th>Result</th>
+  <th>Review</th>
+    </tr>
+  </thead>
+      <tbody>
+        <tr ng-repeat="result in results">
+          <td>{{ result.questionNo }}</td>
+          <td>{{ result.result }}</td>
+          <td><a href="#!/reviewTest/{{result.testID}}/{{result.questionNo}}">Review solution</a></td>
+        </tr>
+      </tbody>
+</table>

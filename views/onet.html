@@ -1,0 +1,38 @@
+<div ng-controller="myCtrl">
+
+  <h1> O-net </h1>
+
+  <h3>
+    {{exam.ExamType}}
+  </h3>
+  <h3>
+    {{exam.ExamLevel}}
+  </h3>
+  <h3>
+    {{exam.ExamID}}
+  </h3>
+  <h3>
+    {{exam.Question}}
+  </h3>
+
+<form ng-submit="submitFunc()">
+    <h4>
+      <label><input type="radio" ng-model="formData.answer" value="a">  {{exam.Answer1}}</label>
+      <br>
+      <label><input type="radio" ng-model="formData.answer" value="b">  {{exam.Answer2}}</label>
+      <br>
+      <label><input type="radio" ng-model="formData.answer" value="c">  {{exam.Answer3}}</label>
+      <br>
+      <label><input type="radio" ng-model="formData.answer" value="d">  {{exam.Answer4}}</label>
+      <br>
+    </h4>
+
+    <input class="btn btn-success" type="submit" name="submit" Value="Submit"/>
+
+</form>
+
+<h1>{{Result.result}}</h1
+<br>
+<h2>{{Result.explanation}}</h2>
+
+</div>

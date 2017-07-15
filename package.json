@@ -1,0 +1,42 @@
+{
+  "name": "mep",
+  "version": "1.0.0",
+  "description": "Modern Education Platform",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katawutc/katawut-MEP.git"
+  },
+  "keywords": [
+    "katawut",
+    "Modern",
+    "Education",
+    "Platform"
+  ],
+  "author": "Katawut Chuasiripattana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katawutc/katawut-MEP/issues"
+  },
+  "homepage": "https://github.com/katawutc/katawut-MEP#readme",
+  "dependencies": {
+    "angular-sessionstorage": "^1.1.5",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.0",
+    "formidable": "^1.1.1",
+    "jsonwebtoken": "^7.4.1",
+    "jwt-simple": "^0.5.1",
+    "mongodb": "^2.2.28",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1"
+  }
+}

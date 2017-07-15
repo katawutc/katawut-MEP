@@ -1,0 +1,28 @@
+<div ng-model="testEnd" ng-init="testEnd = true">
+
+<div ng-controller='ONetM3' ng-if = "testEnd">
+
+<h2> {{exam.TestID}} </h2>
+<h2> {{exam.Level}} </h2>
+<h2> {{exam.Subject}} </h2>
+
+<h2> {{question.Question}} </h2>
+<form ng-submit="submitAndNext()">
+<h4>
+<label><input type="radio" ng-model="formData.answer" value="a">  {{answer1}}</label>
+<br>
+<label><input type="radio" ng-model="formData.answer" value="b">  {{answer2}}</label>
+<br>
+<label><input type="radio" ng-model="formData.answer" value="c">  {{answer3}}</label>
+<br>
+<label><input type="radio" ng-model="formData.answer" value="d">  {{answer4}}</label>
+<br>
+</h4>
+<br>
+
+<button type="button" class="btn btn-warning">Skip question</button>
+<input class="btn btn-success" type="submit" name="submit" Value="Submit"/>
+</div>
+
+</div>
+<!-- Replace by a Test table summary when reaching the end of the Test -->

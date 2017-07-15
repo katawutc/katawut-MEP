@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MEP">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+
+<body>
+
+<h1>Your Exam, please select what you want</h1>
+
+<div ng-app="MEP" ng-controller="ExamController">
+  <h2> {{exam}} </h2>
+</div>
+
+<script>
+  var app = angular.module("MEP", []);
+  app.controller("ExamController", function ($scope, $http) {
+      $http.get('/exam')
+      .then(function(response)) {
+        $scope.exam = response.data;
+    });
+</script>
+
+<br> <br>
+
+<form action="/" method="get">
+  <button type="submit">Home</button>
+</form>
+
+
+
+</body>
+</html>

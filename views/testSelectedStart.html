@@ -1,0 +1,54 @@
+<h1>
+  Now, start the test in tutorial format...
+</h1>
+
+<h2>
+  Question: {{questionNo}}
+</h2>
+<h3>
+  {{question}}
+</h3>
+<form ng-submit="submitAnswer()">
+  <div ng-init="formData.answer='empty'" />
+  <h4>
+  <label><input type="radio" ng-model="formData.answer" value="a"> {{choice1}} </label>
+  <br>
+  <label><input type="radio" ng-model="formData.answer" value="b"> {{choice2}} </label>
+  <br>
+  <label><input type="radio" ng-model="formData.answer" value="c"> {{choice3}} </label>
+  <br>
+  <label><input type="radio" ng-model="formData.answer" value="d"> {{choice4}} </label>
+  <br>
+  </h4>
+  <div ng-show="isSubmitted()">
+    <input type="submit"  class="btn btn-primary" id="submit" value="Submit answer" />
+  </div>
+</form>
+<!-- <div ng-show="isNext()"> -->
+<div>
+  <h2> {{result}} </h2>
+  <h2> {{explanation}} </h2>
+</div>
+
+<div ng-show="isNext()">
+  <button type="button" class="btn btn-success" ng-click="nextQuestion()">Next question</button>
+</div>
+
+<div ng-show="isTestFinished()">
+<button type="button" class="btn btn-info" ng-click="showTestSummary()">Test is finished. Go to Test summary</button>
+</div>
+
+
+<!--
+<div ng-show="isSubmitted()">
+  <button type="button" class="btn btn-primary" ng-click="submitAnswer()">Submit answer</button>
+</div>
+
+<div ng-show="isNext()">
+  <button type="button" class="btn btn-success" ng-click="nextQuestion()">Next question</button>
+</div>
+
+<div ng-show="isTestFinished()">
+<button type="button" class="btn btn-info" ng-click="showTestSummary()">Test is finished. Go to Test summary</button>
+</div>
+-->
